@@ -8,9 +8,10 @@ use App\Models\Service;
 
 class ServiceController extends Controller
 {
-    public function index(){
-        $services = Service::all();
-        return view('service.index', ['services'=>$services]);
+    public function index()
+    {
+        $services = Service::orderBy('created_at', 'desc')->get();
+        return view('service.index', ['services' => $services]);
     }
 
     public function create(){

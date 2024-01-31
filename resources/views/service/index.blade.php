@@ -13,7 +13,7 @@
     <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com --> 
 <!-- Main navigation container -->
 <nav
-class="relative flex w-full flex-wrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:py-4 "
+class=" flex w-full flex-wrap items-center fixed w-full z-20 top-0 start-0 justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:py-4 "
 data-te-navbar-ref>
 <div class="flex w-full flex-wrap items-center justify-between px-3">
   <div>
@@ -95,7 +95,7 @@ data-te-navbar-ref>
 </div>
 </nav>
   
-<div class="flex flex-row flex-wrap md:mx-auto gap-20 justify-center my-4">
+<div class="flex flex-row flex-wrap md:mx-auto gap-20 justify-center my-4 mt-20">
    
      @foreach ($services as $service)
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

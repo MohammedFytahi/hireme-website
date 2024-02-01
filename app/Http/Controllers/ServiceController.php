@@ -24,6 +24,7 @@ class ServiceController extends Controller
             'description' => 'required',
             'category' => 'required',
             'cost' => 'required|numeric',
+            'contact'=>'required|email'
         ]);
     
 

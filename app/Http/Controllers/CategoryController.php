@@ -9,7 +9,7 @@ class CategoryController extends Controller
 {
     public function create()
     {
-        $categories = Category::all(); // Assuming you have a 'Category' model
+        $categories = Category::all(); 
         return view('service.create', ['categories' => $categories]);
     }
 }
